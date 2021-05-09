@@ -17,7 +17,7 @@ const resultSearch = result => {
                         <p><i class="fas fa-store icon__search"></i> ${data.shop}</p>
                         <div class="card__result-star">
                             <div class="row">
-                                <div class="col-5">
+                                <div class="col-5">    
                                     <img src="${data.star}" width="16px">
                                     <img src="${data.star}" width="16px">
                                     <img src="${data.star}" width="16px">
