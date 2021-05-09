@@ -29,7 +29,7 @@ const resultSearch = result => {
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="button button__primary card__result-button">Kunjungi toko</a>
+                        <a href="${data.url}" class="button button__primary card__result-button">Kunjungi toko</a>
                         <a href="#" class="button button__secondary card__result-button">Bandingkan Harga</a>
                     </div>
                 </div>
