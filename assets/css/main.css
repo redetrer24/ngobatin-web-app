@@ -115,6 +115,11 @@ header .logo__container h1 > a {
   color: #212529;
 }
 
+header .logo__container span {
+  color: #fd2c72;
+  font-size: 3.2rem;
+}
+
 header .logo__container .logo {
   cursor: pointer;
   width: 4rem;
@@ -229,5 +234,21 @@ header .button__primary {
   margin-top: 6rem;
   margin-bottom: 2rem;
   border-color: #e0e0e0;
+}
+
+.about__section {
+  margin-top: 7rem;
+  padding: 7.5rem 2rem 2.5rem;
+}
+
+.about__section .h1-custom {
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: #111;
+}
+
+.about__section .h1-custom span {
+  font-size: 4.2rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */

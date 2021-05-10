@@ -1,7 +1,7 @@
 const myNavbar = () => {
     let navbarHTML = `
     <div class="logo__container">
-        <h1><a href="index.html"><img class="logo" src="./assets/img/logo.png" alt="logo"> Ngobatin</a></h1>
+        <h1><a href="index.html"><img class="logo" src="./assets/img/logo.png" alt="logo"> Ngobatin<span>.</span></a></h1>
     </div>
     <nav>
         <ul class="nav__links">
