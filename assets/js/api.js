@@ -4,7 +4,7 @@ import showItems from './component/items.js';
 let SELECTED_URL = getSelectItem();
 
 const fetchAPI = url => {
-    return fetch(url)
+    return fetch(url, {mode: 'no-cors'})
     .then(res => {
         if (res.status !== 200) {
             console.log("Error: " + res.status);
@@ -26,7 +26,7 @@ function getAllItems() {
             showItems(data);
         })
         .catch(error => {
-            console.log(error)
+            console.log(error);
         });
 }
 

@@ -1,4 +1,4 @@
-import getAllItems from './source.js';
+import getAllItems from './api.js';
 import searchStates from './search.js';
 import myNavbar from './component/navbar.js';
 import myCarousel from './component/carousel.js';

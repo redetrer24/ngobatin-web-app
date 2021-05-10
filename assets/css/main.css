@@ -103,7 +103,8 @@ header {
           align-items: center;
   padding: 2rem 10%;
   font-size: 1.4rem;
-  border-bottom: 0.1rem solid #e0e0e0;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
 header .logo__container {
@@ -152,6 +153,12 @@ header .button__primary {
 
 .search__section {
   padding: 7.5rem 2rem 2.5rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .search__section {
+    padding: 10rem;
+  }
 }
 
 .search__section h1 {
@@ -241,14 +248,73 @@ header .button__primary {
   padding: 7.5rem 2rem 2.5rem;
 }
 
+@media only screen and (min-width: 48em) {
+  .about__section {
+    padding: 10rem;
+  }
+}
+
 .about__section .h1-custom {
   font-size: 3.2rem;
   font-weight: 300;
-  color: #111;
+  color: #111111;
 }
 
 .about__section .h1-custom span {
   font-size: 4.2rem;
   font-weight: 700;
+  color: #fd2c72;
+}
+
+.team__section {
+  margin-top: 7rem;
+  padding: 7.5rem 2rem 2.5rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .team__section {
+    padding: 10rem;
+  }
+}
+
+.team__section .h1-custom {
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: #111111;
+}
+
+.team__section .h1-custom span {
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: #fd2c72;
+}
+
+.team__section .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.team__section .box-img {
+  width: 25rem;
+  margin: 1.5rem;
+}
+
+.team__section .box-img img {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team__section .box-img .text {
+  padding: 15px 0 5px;
 }
 /*# sourceMappingURL=main.css.map */

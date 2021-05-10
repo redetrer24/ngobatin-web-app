@@ -2,6 +2,10 @@
     &__section{
         padding: 7.5rem 2rem 2.5rem;
 
+        @include media-breakpoint-up(md) {
+            padding: 10rem;
+        }
+
         h1 {
             margin-bottom: 2rem;
 
