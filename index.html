@@ -38,12 +38,10 @@
                 <input id="search" class="searchbar" type="text" title="Search" placeholder="Cari nama obat...">
                 <i class="fas fa-search icon__search"></i>
             </div>
-            
             <select id="selector" class=" button custom-select search__select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>Choose..</option>
+                <option value="obatBatuk">Obat Batuk</option>
+                <option value="obatHerbal">Obat Herbal</option>
             </select>
             
             <!-- jumlah hasil pencarian -->
@@ -54,6 +52,11 @@
                 <!-- content -->
             </div>
 
+            <!-- selected item -->
+            <div id="selectedItem" class="row">
+                <!-- content -->
+            </div>
+
         </div>
     </main>
     
@@ -61,10 +64,6 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="module" src="./assets/js/app.js"></script>
     <script>
-        
-        $( "select" ) .change(function () {    
-            console.log(document.getElementById('selector').value)
-        }); 
     </script>
 </body>
 </html>

@@ -5,7 +5,7 @@ const searchStates = async searchText => {
     const states = await res.json();
 
     let result = states.filter(state => {
-        const regex = new RegExp(`^${searchText}`, 'gi');
+        const regex = new RegExp(`^${searchText}`, 'gim');
         return state.title.match(regex) || state.price.match(regex);
     });
 
