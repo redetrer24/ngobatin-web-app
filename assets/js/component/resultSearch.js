@@ -6,7 +6,7 @@ const resultSearch = result => {
     if(result.length > 0) {
 
         const countResult = result.length;
-        const html = result.map(data => `
+        const ResultListHTML = result.map(data => `
 
             <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                 <div class="card card__result">
@@ -37,7 +37,7 @@ const resultSearch = result => {
             
         `).join('');
 
-        resultList.innerHTML = html;
+        resultList.innerHTML = ResultListHTML;
         document.getElementById('count_result').innerHTML = `${countResult} hasil di temukan`;
     }
 }
