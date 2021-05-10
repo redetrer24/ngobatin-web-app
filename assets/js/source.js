@@ -1,12 +1,7 @@
+import getSelectItem from './select.js';
 import showItems from './component/items.js';
 
-const getSelectItem = () => {
-    let selector = document.getElementById('selector').value;
-    let BASE_URL = `../../data/${selector}.json`;
-    return BASE_URL;
-}
-
-let BASE_URL = getSelectItem();
+let SELECTED_URL = getSelectItem();
 
 const fetchAPI = url => {
     return fetch(url)
@@ -25,19 +20,20 @@ const fetchAPI = url => {
 };
 
 function getAllItems() {
-    fetchAPI(BASE_URL)
+    document.getElementById('spinner').style.display = 'block';
+    fetchAPI(SELECTED_URL)
         .then(data => {
             showItems(data);
         })
         .catch(error => {
             console.log(error)
-        })
+        });
 }
 
 document.getElementById('selector').addEventListener("change", ()=>{
     const itemsElement = document.getElementById('selectedItem');
+    SELECTED_URL = getSelectItem();
     itemsElement.innerHTML = '';
-    BASE_URL = getSelectItem();
     getAllItems();
 });
 

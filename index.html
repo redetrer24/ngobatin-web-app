@@ -14,18 +14,7 @@
 </head>
 <body>
    
-    <header>
-        <div class="logo__container">
-            <h1><img class="logo" src="./assets/img/logo.png" alt="logo"> Ngobatin</h1>
-        </div>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Article</a></li>
-            </ul>
-        </nav>
-        <a class="button button__primary" href="">Buku tamu</a>
-    </header>
+    <header id="header"></header>
 
     <main>
 
@@ -38,24 +27,28 @@
                 <input id="search" class="searchbar" type="text" title="Search" placeholder="Cari nama obat...">
                 <i class="fas fa-search icon__search"></i>
             </div>
+            
             <select id="selector" class=" button custom-select search__select" id="inputGroupSelect01">
-                <option selected>Choose..</option>
                 <option value="obatBatuk">Obat Batuk</option>
                 <option value="obatHerbal">Obat Herbal</option>
+                <option value="obatDemam">Obat Demam</option>
             </select>
             
             <!-- jumlah hasil pencarian -->
             <h3 class="count__result" id="count_result"></h3>
 
             <!-- hasil pencarian -->
-            <div id="resultlist" class="resultlist row mt-5">
-                <!-- content -->
+            <div id="resultlist" class="resultlist row mt-5"></div>
+
+            <!-- spinner -->
+            <div id="spinner" class="text-center">
+                <div class="spinner-border text-info" style="width: 5rem; height: 5rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
             </div>
 
             <!-- selected item -->
-            <div id="selectedItem" class="row">
-                <!-- content -->
-            </div>
+            <div id="selectedItem" class="row"></div>
 
         </div>
     </main>
@@ -63,7 +56,5 @@
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="module" src="./assets/js/app.js"></script>
-    <script>
-    </script>
 </body>
 </html>

@@ -1,26 +1,33 @@
-import searchStates from './search.js';
-import myCarousel from './component/carousel.js';
 import getAllItems from './source.js';
+import searchStates from './search.js';
+import myNavbar from './component/navbar.js';
+import myCarousel from './component/carousel.js';
 import * as resultSearchJs from './component/resultSearch.js';
 
-resultSearchJs.search.addEventListener('input', () => {
+document.addEventListener("DOMContentLoaded", function () {
     
-    if(resultSearchJs.search.value == '') {
-        resultSearchJs.resultList.innerHTML = '';
-        getAllItems();
-    }
-
-    searchStates(resultSearchJs.search.value);
-    const itemsElement = document.getElementById('selectedItem');
-    itemsElement.innerHTML = '';
-
+    resultSearchJs.search.addEventListener('input', () => {
+        
+        if(resultSearchJs.search.value == '') {
+            document.getElementById('count_result').innerHTML = '';
+            resultSearchJs.resultList.innerHTML = '';
+            getAllItems();
+        }
+    
+        searchStates(resultSearchJs.search.value);
+        const itemsElement = document.getElementById('selectedItem');
+        itemsElement.innerHTML = '';
+    
+    });
+    
+    const carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000,
+        wrap: false
+    });
+    
+    myNavbar();
+    getAllItems();
 });
 
-const carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 2000,
-    wrap: false
-});
-
-getAllItems();
 
 

@@ -1,4 +1,4 @@
-import {resultSearch, search, resultList} from './component/resultSearch.js';
+import {resultSearch, resultList} from './component/resultSearch.js';
 
 const searchStates = async searchText => {
     const res    = await fetch('../../data/alldata.json');
@@ -11,8 +11,6 @@ const searchStates = async searchText => {
 
     if(searchText.length === 0) {
         result = [];
-        resultList.innerHTML = '';
-        document.getElementById('count_result').innerHTML = '';
     }else if(result.length == 0){
         result = [];
         resultList.innerHTML = `<h3> Hasil pencarian '${searchText}' tidak di temukan </h3>`;

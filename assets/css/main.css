@@ -110,6 +110,11 @@ header .logo__container {
   margin-right: auto;
 }
 
+header .logo__container h1 > a {
+  text-decoration: none;
+  color: #212529;
+}
+
 header .logo__container .logo {
   cursor: pointer;
   width: 4rem;
@@ -133,7 +138,7 @@ header .nav__links li a {
 }
 
 header .nav__links li a:hover {
-  color: #0D0C22;
+  color: #212529;
 }
 
 header .button__primary {
@@ -167,7 +172,7 @@ header .button__primary {
 
 @media only screen and (min-width: 48em) {
   .search__section .p_title {
-    width: 50%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;

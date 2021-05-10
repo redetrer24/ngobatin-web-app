@@ -9,6 +9,11 @@ header {
     .logo__container {
         margin-right: auto;
 
+        h1>a {
+            text-decoration: none;
+            color: $color-dark-black;
+        }
+
         .logo {
             cursor: pointer;
             width: 4rem;

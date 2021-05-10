@@ -6,7 +6,7 @@ function showItems(data) {
     data.forEach(items => {
         itemsHTML += `
 
-        <div class="col-lg-3 col-md-3 col-sm-6 mb-5 box-hidden">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-5 box-hidden">
             <div class="card card__result">
                 <img class="card-img-top card__result-img" src="${items.image}" alt="Card image cap">
                 <div class="card-body ">
@@ -34,6 +34,7 @@ function showItems(data) {
         </div>
         `
 
+        document.getElementById('spinner').style.display = 'none';
         itemsElement.innerHTML = itemsHTML;
     });
 }

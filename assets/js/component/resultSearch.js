@@ -8,7 +8,7 @@ const resultSearch = result => {
         const countResult = result.length;
         const ResultListHTML = result.map(data => `
 
-            <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
                 <div class="card card__result">
                     <img class="card-img-top card__result-img" src="${data.image}" alt="Card image cap">
                     <div class="card-body ">
