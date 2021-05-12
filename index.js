@@ -3,8 +3,13 @@ const bodyParser = require('body-parser');
 const app = express();
 const mysql = require('mysql');
  
+// set view file
+app.set('views',path.join(__dirname,'views'));
+
 // parse application/json
+app.set('view engine', 'ejs');
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
  
 //create database connection
 const conn = mysql.createConnection({
