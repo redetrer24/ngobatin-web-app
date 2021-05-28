@@ -28,6 +28,17 @@ document.addEventListener("DOMContentLoaded", function () {
     AOS.init();
     myNavbar();
     getAllItems();
+
+    const btn = document.getElementsByClassName('button-itm');
+    console.log(btn)
+
+    for(var i = 0; i<btn.length; i++) {
+        let cartBtn = btn[i];
+        cartBtn.addEventListener('click', ()=> {
+            console.log('oke')
+        }); 
+    }
+
 });
 
 

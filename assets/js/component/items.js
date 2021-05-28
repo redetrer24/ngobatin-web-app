@@ -28,7 +28,9 @@ function showItems(data) {
                         </div>
                     </div>
                     <a href="${items.url}" class="button button__primary card__result-button" target="_blank">Kunjungi toko</a>
-                    <a href="#" class="button button__secondary card__result-button">Bandingkan Harga</a>
+                    <div class="button-itm">
+                        <button class="button button__secondary card__result-button ">Bandingkan Harga</button>
+                    </div>
                 </div>
             </div>
         </div>
