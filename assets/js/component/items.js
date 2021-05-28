@@ -8,7 +8,7 @@ function showItems(data) {
 
         <div class="col-lg-3 col-md-4 col-sm-6 mb-5 box-hidden">
             <div class="card card__result">
-                <img class="card-img-top card__result-img" src="${items.image}" alt="Card image cap">
+                <a href="${items.url}"><img class="card-img-top card__result-img" src="${items.image}" alt="${items.title}"></a>
                 <div class="card-body ">
                     <h5 class="card-title card__result-title">${items.title}</h5>
                     <p class="card-text card__result-text">${items.price}</p>

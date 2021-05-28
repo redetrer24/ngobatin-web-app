@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         wrap: false
     });
     
+    AOS.init();
     myNavbar();
     getAllItems();
 });

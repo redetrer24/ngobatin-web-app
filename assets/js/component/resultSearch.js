@@ -10,7 +10,7 @@ const resultSearch = result => {
 
             <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
                 <div class="card card__result">
-                    <img class="card-img-top card__result-img" src="${data.image}" alt="Card image cap">
+                    <a href="${items.url}"><img class="card-img-top card__result-img" src="${items.image}" alt="${items.title}"></a>
                     <div class="card-body ">
                         <h5 class="card-title card__result-title">${data.title}</h5>
                         <p class="card-text card__result-text">${data.price}</p>
