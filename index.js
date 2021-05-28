@@ -13,10 +13,10 @@ app.use(bodyParser.urlencoded({extended: false}));
  
 //create database connection
 const conn = mysql.createConnection({
-  host: 'localhost',
+  host: 'localhost:8012',
   user: 'root',
   password: '',
-  database: 'smartweb'
+  database: 'db_ngobatin'
 });
  
 //connect to database
