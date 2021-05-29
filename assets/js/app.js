@@ -1,6 +1,7 @@
 import getAllItems from './api.js';
 import searchStates from './search.js';
 import myNavbar from './component/navbar.js';
+import footer from './component/footer.js';
 import myCarousel from './component/carousel.js';
 import * as resultSearchJs from './component/resultSearch.js';
 
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     AOS.init();
     myNavbar();
+    footer();
     getAllItems();
 
     const btn = document.getElementsByClassName('button-itm');

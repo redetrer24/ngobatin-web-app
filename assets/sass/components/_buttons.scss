@@ -8,6 +8,12 @@
     font-size: 1.6rem;
     margin:0 0.3em 0.3em 0;
 
+    &__sosialmedia {
+        background-color: $color-dark-black;
+        border: none;
+        padding: .8rem;
+    }
+
     &__primary {
         color: $color-white;
         background-color: $color-pink;
