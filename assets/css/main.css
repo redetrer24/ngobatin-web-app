@@ -39,6 +39,12 @@ p {
   margin: 0 0.3em 0.3em 0;
 }
 
+.button__sosialmedia {
+  background-color: #212529;
+  border: none;
+  padding: .8rem;
+}
+
 .button__primary {
   color: #fff;
   background-color: #fd2c72;
@@ -149,6 +155,45 @@ header .nav__links li a:hover {
 
 header .button__primary {
   margin-left: 3rem;
+}
+
+.footer {
+  border-top: 0.1rem solid #e0e0e0;
+  padding-top: 8rem;
+}
+
+.footer__title span {
+  color: #fd2c72;
+}
+
+.footer .list-group {
+  list-style: none;
+  margin-left: 5rem;
+}
+
+@media only screen and (max-width: 62em) {
+  .footer .list-group {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+}
+
+.footer .list-group__item {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #6E6D7A;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.footer .box-cprght {
+  margin-top: 5rem;
+  text-align: left;
+}
+
+.footer .box-cprght span {
+  color: #212529;
+  font-weight: 500;
 }
 
 .search__section {
@@ -316,5 +361,44 @@ header .button__primary {
 
 .team__section .box-img .text {
   padding: 15px 0 5px;
+}
+
+.footer {
+  border-top: 0.1rem solid #e0e0e0;
+  padding-top: 8rem;
+}
+
+.footer__title span {
+  color: #fd2c72;
+}
+
+.footer .list-group {
+  list-style: none;
+  margin-left: 5rem;
+}
+
+@media only screen and (max-width: 62em) {
+  .footer .list-group {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+}
+
+.footer .list-group__item {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #6E6D7A;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.footer .box-cprght {
+  margin-top: 5rem;
+  text-align: left;
+}
+
+.footer .box-cprght span {
+  color: #212529;
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */
